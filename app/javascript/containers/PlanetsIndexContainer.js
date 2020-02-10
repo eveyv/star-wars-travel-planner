@@ -39,7 +39,7 @@ const PlanetsIndexContainer = props => {
   return(
     <div className="planet-list">
       <h2>Explore a galaxy far, far away...</h2>
-      <li>{planetTiles}</li>
+        {planetTiles}
     </div>
   )
 }
