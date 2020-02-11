@@ -4,11 +4,11 @@ import PlanetsIndexContainer from '../../containers/PlanetsIndexContainer'
 
 export const App = (props) => {
   return (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={PlanetsIndexContainer} />
-    </Switch>
-  </BrowserRouter>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={PlanetsIndexContainer} />
+      </Switch>
+    </BrowserRouter>
   )
 }
 
