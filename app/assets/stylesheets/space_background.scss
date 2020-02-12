@@ -47,7 +47,15 @@ h2 {
   font-family: 'starFont'
 }
 
-li {
+.planet-tile {
   color: white;
   text-align: center
+}
+
+.tiles {
+  width: 33rem;
+  margin: 0;
+  display: inline-block;
+  float: left;
+  padding: 60px
 }
