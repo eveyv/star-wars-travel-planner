@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import PlanetsIndexContainer from '../../containers/PlanetsIndexContainer'
+import PlanetsIndexContainer from './PlanetsIndexContainer'
 
 export const App = (props) => {
   return (
