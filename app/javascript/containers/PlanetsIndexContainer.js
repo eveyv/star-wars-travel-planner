@@ -7,7 +7,7 @@ const PlanetsIndexContainer = props => {
   let [planets, setPlanets] = useState([])
 
   useEffect(() => {
-    fetch('https://swapi.co/api/planets/')
+    fetch('https://swapi.co/api/planets')
     .then(response => {
       if (response.ok) {
         return response
@@ -37,7 +37,7 @@ const PlanetsIndexContainer = props => {
   })
 
   return(
-    <div className="planet-list">
+    <div className="stars">
       <h2>Explore a galaxy far, far away...</h2>
         {planetTiles}
     </div>
