@@ -17,10 +17,11 @@ const PlanetShowContainer = (props) => {
       }
     })
     .then(fetchedPlanet => {
-      setPlanet(fetchedPlanet.planet)
+      setPlanet(fetchedPlanet)
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }, [])
+
 
   return(
     <div>
