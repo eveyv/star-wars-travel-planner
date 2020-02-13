@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   devise_for :users
 
   get "/planets", to: 'homes#index'
+  get "/planets/:id", to: 'homes#index'
 
   namespace :api do
     namespace :v1 do
-      resources :planets, only: [:index]
+      resources :planets, only: [:index, :show]
     end
   end
 end

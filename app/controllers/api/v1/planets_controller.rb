@@ -5,4 +5,9 @@ class Api::V1::PlanetsController < ApplicationController
     render json: Planet.all
   end
 
+  def show
+    planet = Planet.find(params[:id])
+    render json: planet
+  end
+
 end
