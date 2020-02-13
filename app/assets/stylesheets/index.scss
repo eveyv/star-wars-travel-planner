@@ -41,6 +41,14 @@
 	to {background-position:10000px 0;}
 }
 
+img {
+  width: 65%;
+  height: 50%;
+  border-radius: 1%;
+  display: block;
+  margin: auto
+}
+
 h2 {
   color: white;
   text-align: center;
@@ -57,10 +65,15 @@ h2 {
   padding: 60px;
 }
 
-img {
-  width: 350px;
-  height: 350px;
+.planet-pics {
+  width: 400px;
+  height: 400px;
   border-radius: 90%;
   display: block;
   margin: auto
+}
+
+.planet-description {
+  color: yellow;
+  text-align: center
 }
