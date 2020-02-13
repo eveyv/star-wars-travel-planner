@@ -7,7 +7,7 @@ return(
   <div className="tiles">
       <div key={id} className="planet-tile">
         <Link to={`/planets/${planet.id}`}>| {name} |</Link>
-        <img src={planet_url}/>
+        <img className="planet-pics" src={planet_url}/>
       </div>
   </div>
   )
