@@ -11,14 +11,3 @@ return(
   )
 }
 export default PlanetTiles
-
-
-
-
-
-// <ul class="tiles">
-//   <div>
-//     <p>{name}</p>
-//     <img src={planet_url}/>
-//   </div>
-// </ul>
