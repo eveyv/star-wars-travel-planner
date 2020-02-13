@@ -12,5 +12,3 @@ return(
   )
 }
 export default PlanetTiles
-
-'a href={url}'
