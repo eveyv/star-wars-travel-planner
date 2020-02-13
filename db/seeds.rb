@@ -8,7 +8,7 @@
 @planets = Planet.create([
     { name: 'Hoth',
       terrain: 'Icy',
-      url: 'https://vignette.wikia.nocookie.net/starwars/images/d/d1/Hoth.jpg/revision/latest?cb=20071019040631',
+      url: 'https://vignette.wikia.nocookie.net/battlefront/images/9/99/Rhen_var.jpg/revision/latest?cb=20110815204106',
       description: 'A remote planet at the far reaches of the solar system.  Enjoy the sprawling fields of ice and then have some hot cocoa inside one of its famous research facilities!'
      },
      { name: 'Coruscant',
@@ -23,7 +23,7 @@
        },
        { name: 'Tatooine',
          terrain: 'Desert',
-         url: 'https://en.wikipedia.org/wiki/Tatooine#/media/File:Tatooine_(fictional_desert_planet).jpg',
+         url: 'https://vignette.wikia.nocookie.net/empireatwar/images/8/82/Tatooine-TOR.jpg/revision/latest?cb=20150126022416',
          description: 'Visit the beautiful desert planet home to the most beloved family in the universe, the Skywalkers!'
         },
         { name: 'Kashyyk',
