@@ -9,7 +9,6 @@ const PlanetShowContainer = (props) => {
   useEffect (() => {
     fetch(`/api/v1/planets/${planetId}`)
     .then(response => {
-      debugger
       if (response.ok) {
         return response.json()
       } else {

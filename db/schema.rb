@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 2020_02_11_212221) do
   create_table "planets", force: :cascade do |t|
     t.string "name", null: false
     t.string "terrain", null: false
-    t.string "url", null: false
+    t.string "planet_url", null: false
     t.string "description", null: false
+    t.string "destination_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

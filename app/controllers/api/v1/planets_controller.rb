@@ -8,7 +8,6 @@ class Api::V1::PlanetsController < ApplicationController
   def show
     planet = Planet.find(params[:id])
     render json: planet
-    binding.pry
   end
 
 end
