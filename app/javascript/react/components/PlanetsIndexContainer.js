@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import App from '../react/components/App'
+import App from './App'
 import PlanetTiles from './PlanetTiles'
 
 const PlanetsIndexContainer = props => {
