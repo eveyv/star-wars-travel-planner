@@ -4,10 +4,10 @@ import PlanetTiles from './PlanetTiles'
 
 const PlanetsIndexContainer = props => {
 
-  let [planets, setPlanets] = useState([])
+  const [planets, setPlanets] = useState([])
 
   useEffect(() => {
-    fetch('https://swapi.co/api/planets')
+    fetch('/api/v1/planets.json')
     .then(response => {
       if (response.ok) {
         return response
@@ -20,8 +20,8 @@ const PlanetsIndexContainer = props => {
     .then(response => {
       return response.json()
     })
-    .then(validatedResponse => {
-      setPlanets(validatedResponse.results)
+    .then(body => {
+      setPlanets(body)
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }, [])
