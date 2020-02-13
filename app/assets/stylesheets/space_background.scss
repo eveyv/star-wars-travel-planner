@@ -26,15 +26,9 @@
 }
 
 .clouds{
-<<<<<<< HEAD
 	z-index: 2;
   background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
 	animation: move-clouds-back 200s linear infinite;
-=======
-  z-index: 2;
-  background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
-  animation: move-clouds-back 200s linear infinite;
->>>>>>> f7cff81ab4541780ff25868986a152950a3e46f4
 }
 
 @keyframes move-twink-back {
