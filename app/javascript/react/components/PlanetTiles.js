@@ -1,12 +1,12 @@
 import React from 'react'
 
 const PlanetTiles = ({ planet }) => {
-  let { id, name, terrain, url, description } = planet
+  let { id, name, terrain, planet_url, description } = planet
 return(
   <div className="tiles">
       <div key={id} className="planet-tile">
         | {name} |
-        <img src={url}/>
+        <img src={planet_url}/>
       </div>
   </div>
   )
