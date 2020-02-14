@@ -29,11 +29,15 @@ const PlanetsIndexContainer = props => {
   const planetTiles = planets.map(planet => {
 
     return(
-      <div className="column large-4 index-div">
-        <PlanetTiles
-          key={planet.id}
-          planet={planet}
-        />
+      <div className="grid-x">
+        <div className="cell small-12 medium-4 large-4">
+          <span>
+            <PlanetTiles
+              key={planet.id}
+              planet={planet}
+            />
+          </span>
+        </div>
       </div>
     )
   })
