@@ -30,41 +30,28 @@
 }
 
 .planet-names {
-font-family: 'Dosis', sans-serif;
-font-style: oblique;
-font-size: 24px;
-color: yellow
+  font-family: 'Dosis', sans-serif;
+  font-style: oblique;
+  font-size: 24px;
+  color: yellow
 }
-
 
 h1 {
   font-family: 'Syncopate', sans-serif;
   color: yellow;
   font-style: oblique;
   margin: auto;
+  padding-bottom: 55px;
   width: 40%;
+  font-weight: bolder;
   font-size: 55px
 }
 
-.tiles {
-  color: white;
-  text-align: center;
-  width: 70rem;
-  margin: 0;
-  display: inline-block;
-  float: left;
-  padding: 60px;
-}
-
 .planet-pics {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 90%;
   display: block;
-  margin: auto
-}
-
-.index-div {
-  display: inline-block;
-  margin: 500px, 10px;
+  margin: auto;
+  padding: 30px
 }
