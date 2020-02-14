@@ -2,12 +2,6 @@
 // @import "compass/reset";
 @import 'foundation';
 
-
-@font-face {
-  font-family: 'starFont';
-  src: url("/fonts/star-jedi-outline-font/StarJediOutline.ttf") format('truetype')
-}
-
 .stars, .twinkling, .clouds {
 	position:absolute;
 	display:block;
@@ -33,15 +27,6 @@
 	animation: move-clouds-back 200s linear infinite;
 }
 
-@keyframes move-twink-back {
-	from {background-position:0 0;}
-	to {background-position:-10000px 5000px;}
-}
-
-@keyframes move-clouds-back {
-	from {background-position:0 0;}
-	to {background-position:10000px 0;}
-}
 
 h2 {
   color: white;
@@ -52,7 +37,7 @@ h2 {
 .tiles {
   color: white;
   text-align: center;
-  width: 33rem;
+  width: 70rem;
   margin: 0;
   display: inline-block;
   float: left;
@@ -65,4 +50,9 @@ h2 {
   border-radius: 90%;
   display: block;
   margin: auto
+}
+
+.index-div {
+  display: inline-block;
+  margin: 500px, 10px
 }
