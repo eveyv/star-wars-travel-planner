@@ -6,8 +6,9 @@
 body {
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
-  text-align: center
+  text-align: center;
 }
+
 
 img {
   width: 65%;
@@ -82,4 +83,8 @@ h1 {
     };
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
+}
+
+.show-name {
+  color: yellow;
 }
