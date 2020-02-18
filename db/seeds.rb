@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 @trips = Trip.create([
     { name: "Vacation"
-      }
+    }
 ])
 
 @planets = Planet.create([
