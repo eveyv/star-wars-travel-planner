@@ -19,6 +19,3 @@ Created By: Max Lee and Everett Yeaw
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
-this is for adding planets#index as well as planets_controller

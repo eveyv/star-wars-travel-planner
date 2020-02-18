@@ -10,23 +10,44 @@
 	width:100%; height:100%;
   text-align: center
 }
-
 .stars {
 	z-index: 0;
 	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
   text-align: center
 }
-
 .twinkling{
 	z-index: 1;
 	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
 	animation: move-twink-back 200s linear infinite;
 }
-
 .clouds{
 	z-index: 2;
   background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
 	animation: move-clouds-back 200s linear infinite;
+}
+
+img {
+  width: 65%;
+  height: 50%;
+  border-radius: 1%;
+  display: block;
+  margin: auto
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: 'starFont'
+}
+
+.tiles {
+  color: white;
+  text-align: center;
+  width: 33rem;
+  margin: 0;
+  display: inline-block;
+  float: left;
+  padding: 60px;
 }
 
 .planet-names {
@@ -54,4 +75,9 @@ h1 {
   display: block;
   margin: auto;
   padding: 30px
+}
+
+.planet-description {
+  color: yellow;
+  text-align: center
 }
