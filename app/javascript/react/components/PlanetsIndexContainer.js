@@ -40,6 +40,7 @@ const PlanetsIndexContainer = props => {
     <div className="stars">
       <div className="grid-x grid-margin-x">
         {planetTiles}
+     </div>
     </div>
 
   )
