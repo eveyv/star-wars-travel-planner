@@ -4,7 +4,7 @@ const PlanetShow = ({ planetObject }) => {
 
   return(
     <div className="stars">
-      <h2>| {name} |</h2>
+      <h2 className="show-name">| {name} |</h2>
         <img className="destination-pic" src={destination_url}/>
         <div className="planet-description">
             {description}
