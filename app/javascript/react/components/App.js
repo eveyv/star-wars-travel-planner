@@ -12,7 +12,6 @@ export const App = (props) => {
         <Route exact path="/planets/:id" component={PlanetShowContainer} />
         <Route exact path="/planets" component={PlanetsIndexContainer} />
         <Route exact path="/trips" component={TripsIndexContainer} />
-
       </Switch>
     </BrowserRouter>
   )
