@@ -13,13 +13,13 @@ RSpec.describe Api::V1::PlanetsController, type: :controller do
       name: 'Tatooine',
       terrain: 'Desert',
       planet_url: 'https://en.wikipedia.org/wiki/Tatooine#/media/File:Tatooine_(fictional_desert_planet).jpg',
-      description: 'i dont like sand its coarse and rough',
+      description: 'i dont like sand its coarse and rough'
       ) }
     let!(:second_planet) { Planet.create(
       name: 'Mustafar',
       terrain: 'Lava',
       planet_url: 'https://vignette.wikia.nocookie.net/starwars/images/d/d1/Hoth.jpg/revision/latest?cb=20071019040631',
-      description: 'fire burning on the dance floor',
+      description: 'fire burning on the dance floor'
       ) }
 
     it "should return the planets" do
