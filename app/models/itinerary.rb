@@ -1,4 +1,4 @@
 class Itinerary < ApplicationRecord
-  belongs_to :trip, null: false
-  belongs_to :planet, null: false
+  belongs_to :trip
+  belongs_to :planet
 end
