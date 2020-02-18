@@ -13,13 +13,15 @@ RSpec.describe Api::V1::PlanetsController, type: :controller do
       name: 'Tatooine',
       terrain: 'Desert',
       planet_url: 'https://en.wikipedia.org/wiki/Tatooine#/media/File:Tatooine_(fictional_desert_planet).jpg',
-      description: 'i dont like sand its coarse and rough'
+      description: 'i dont like sand its coarse and rough',
+      destination_url: 'https://www.google.com'
       ) }
     let!(:second_planet) { Planet.create(
       name: 'Mustafar',
       terrain: 'Lava',
       planet_url: 'https://vignette.wikia.nocookie.net/starwars/images/d/d1/Hoth.jpg/revision/latest?cb=20071019040631',
-      description: 'fire burning on the dance floor'
+      description: 'fire burning on the dance floor',
+      destination_url: 'https://www.google.com'
       ) }
 
     it "should return the planets" do
@@ -34,11 +36,14 @@ RSpec.describe Api::V1::PlanetsController, type: :controller do
       expect(returned_json[0]["terrain"]).to eq 'Desert'
       expect(returned_json[0]["planet_url"]).to eq 'https://en.wikipedia.org/wiki/Tatooine#/media/File:Tatooine_(fictional_desert_planet).jpg'
       expect(returned_json[0]["description"]).to eq 'i dont like sand its coarse and rough'
+      expect(returned_json[0]["destination_url"]).to eq 'https://www.google.com'
 
       expect(returned_json[1]["name"]).to eq 'Mustafar'
       expect(returned_json[1]["terrain"]).to eq 'Lava'
       expect(returned_json[1]["planet_url"]).to eq 'https://vignette.wikia.nocookie.net/starwars/images/d/d1/Hoth.jpg/revision/latest?cb=20071019040631'
       expect(returned_json[1]["description"]).to eq 'fire burning on the dance floor'
+      expect(returned_json[1]["destination_url"]).to eq 'https://www.google.com'
+
     end
   end
 
