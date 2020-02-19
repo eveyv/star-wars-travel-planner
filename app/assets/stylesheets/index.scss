@@ -102,8 +102,10 @@ h1 {
   margin: auto
 }
 
-.background {
-
+.trip-form {
+  display: inline-block;
+  padding:40px;
+  border: 2px dashed yellow;
 }
 
 .title {
@@ -117,6 +119,13 @@ h1 {
   font-size: 55px
 }
 
+.form-text {
+  color:white;
+  font-family: 'Syncopate', sans-serif, bold;
+  font-size: 24px
+
+}
+
 .top-bar {
     a {
       color: yellow;
@@ -125,8 +134,14 @@ h1 {
     li {
       background: #000 url('https://image.ibb.co/mjnygo/stars.png');
       border: 1px dashed yellow;
-      padding: inherit;
+      padding: 10px;
     };
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
+}
+
+.btn {
+  font-family: 'Syncopate', sans-serif;
+  background: yellow;
+  color:black;
 }
