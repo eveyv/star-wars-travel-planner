@@ -9,9 +9,9 @@ export const App = (props) => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={PlanetsIndexContainer} />
-        <Route exact path="/planets/:id" component={PlanetShowContainer} />
         <Route exact path="/planets" component={PlanetsIndexContainer} />
         <Route exact path="/trips" component={TripsIndexContainer} />
+        <Route exact path="/planets/:id" component={PlanetShowContainer} />
       </Switch>
     </BrowserRouter>
   )
