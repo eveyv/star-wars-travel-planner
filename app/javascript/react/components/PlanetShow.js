@@ -1,6 +1,7 @@
 import React from 'react'
 const PlanetShow = ({ planetObject }) => {
   let { id, name, terrain, url, description, destination_url } = planetObject
+
   return(
     <div>
       <h2>| {name} |</h2>
