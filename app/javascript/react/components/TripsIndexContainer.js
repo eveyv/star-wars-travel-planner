@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import App from './App'
-import PlanetTiles from './PlanetTiles'
+import TripTiles from './TripTiles'
 
-const PlanetsIndexContainer = props => {
-
-  const [planets, setPlanets] = useState([])
+const TripsIndexContainer = props => {
+  const [trips, setTrips] = useState([])
 
   useEffect(() => {
-    fetch('/api/v1/planets.json')
+    fetch('/api/v1/trips.json')
     .then(response => {
       if (response.ok) {
         return response
@@ -21,29 +20,27 @@ const PlanetsIndexContainer = props => {
       return response.json()
     })
     .then(body => {
-      setPlanets(body)
+      setTrips(body)
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }, [])
 
-  const planetTiles = planets.map(planet => {
+  const tripTiles = trips.map(trip => {
 
     return(
-     <PlanetTiles
-      key={planet.id}
-      planet={planet}
+      <TripTiles
+        key={trip.id}
+        trip={trip}
       />
     )
   })
 
   return(
     <div className="stars">
-      <div className="grid-x grid-margin-x">
-        {planetTiles}
-      </div>
+      <h2>The Last Jedi is an abomination</h2>
+        {tripTiles}
     </div>
-
   )
 }
 
-export default PlanetsIndexContainer
+export default TripsIndexContainer
