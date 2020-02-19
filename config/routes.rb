@@ -8,9 +8,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :planets, only: [:index, :show] do
-        resources :trips, only: [:index]
-        end
+      resources :trips, only: [:index]
+        resources :planets, only: [:index, :show]
       end
     end
   end
