@@ -7,10 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
+
   <nav class="top-bar">
     <h1><a className="title" href="/">EXPLORE A GALAXY FAR, FAR AWAY...</a></h1>
-
     <section class="top-bar-section">
       <ul class="right">
         <%- if current_user -%>
@@ -23,6 +22,10 @@
     </section>
   </nav>
 
+  <br/>
+  <br/>
+
+
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
       <%= value %>
@@ -32,14 +35,14 @@
   <%= yield %>
 
   <%= javascript_include_tag 'application' %>
-  
-  <%- if Rails.env.development? || Rails.env.test? -%> 
+
+  <%- if Rails.env.development? || Rails.env.test? -%>
     <%= javascript_tag do %>
       window.railsEnv = '<%= Rails.env %>'
     <%- end -%>
   <%- end -%>
   <%= javascript_pack_tag 'application' %>
-  
+
   <%= yield :extra_footer %>
 
 </body>
