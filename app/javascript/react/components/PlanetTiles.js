@@ -9,7 +9,6 @@ return(
     <Link to={`/planets/${planet.id}`} className="planet-names">| {name} |</Link>
     <img className="planet-pics" src={planet_url} />
   </div>
-
   )
 }
 export default PlanetTiles
