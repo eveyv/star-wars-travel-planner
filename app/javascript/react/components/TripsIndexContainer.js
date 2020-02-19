@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import App from './App'
 import TripTiles from './TripTiles'
+import TripForm from './TripForm'
 
 const TripsIndexContainer = props => {
   const [trips, setTrips] = useState([])
@@ -39,7 +40,12 @@ const TripsIndexContainer = props => {
     <div>
       <h2>The Last Jedi is an abomination</h2>
         {tripTiles}
+
+        <TripForm
+        />
     </div>
+
+
   )
 }
 
