@@ -1,12 +1,19 @@
 // @import "susy";
 // @import "compass/reset";
-
 @import 'foundation';
 
 body {
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
-  text-align: center;
+  text-align: center
+}
+
+img {
+  width: 65%;
+  height: 50%;
+  border-radius: 1%;
+  display: block;
+  margin: auto
 }
 
 
@@ -38,17 +45,14 @@ h1 {
   color: yellow
 }
 
+
 .planet-pics {
   width: 350px;
   height: 350px;
   border-radius: 90%;
   display: block;
   margin: auto;
-  padding: 30px;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
+
 }
 
 .planet-description {
@@ -100,4 +104,29 @@ h1 {
 
 .background {
 
+}
+
+.title {
+  font-family: 'Syncopate', sans-serif;
+  color: yellow;
+  font-style: oblique;
+  margin: auto;
+  padding-bottom: 55px;
+  width: 40%;
+  font-weight: bolder;
+  font-size: 55px
+}
+
+.top-bar {
+    a {
+      color: yellow;
+      ridge: 5px
+    };
+    li {
+      background: #000 url('https://image.ibb.co/mjnygo/stars.png');
+      border: 1px dashed yellow;
+      padding: inherit;
+    };
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png');
+  background-repeat: repeat;
 }
