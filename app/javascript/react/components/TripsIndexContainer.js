@@ -74,10 +74,6 @@ if(shouldRedirect) {
   })
 
   return(
-<<<<<<< HEAD
-=======
-
->>>>>>> 0f1cfe7cb7366dd555ccfb508cff9a69f88c8179
     <div>
       <h2>The Last Jedi is an abomination</h2>
         {tripTiles}
