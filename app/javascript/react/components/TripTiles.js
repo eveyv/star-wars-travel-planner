@@ -4,13 +4,10 @@ const TripTiles = ({ trip }) => {
   let { id, name, planet_name } = trip
 
   return(
-    <div>
-      <div key={id} className="planet-description">
-        {name}
-          <li>{planet_name}</li>
-      </div>
+    <div key={id} className="planet-description">
+      {name} - {planet_name}
     </div>
-    )
+  )
 }
 
 export default TripTiles
