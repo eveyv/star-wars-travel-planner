@@ -31,6 +31,7 @@ const TripsIndexContainer = props => {
       <TripTiles
         key={trip.id}
         trip={trip}
+        planet_name={trip.planet_name}
       />
     )
   })
