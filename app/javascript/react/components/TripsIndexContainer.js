@@ -45,11 +45,10 @@ const TripsIndexContainer = props => {
     <div>
       <h1 className="title">| Trips |</h1>
       <Link to={`/trips/new`} className="link-to"> NEW </Link>
+    <div>
+      <h2>The Last Jedi is an abomination</h2>
         {tripTiles}
       <h2 className="easter-egg">The Last Jedi is an abomination</h2>
-
-
-
     </div>
 
 

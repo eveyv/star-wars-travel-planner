@@ -1,5 +1,6 @@
 // @import "susy";
 // @import "compass/reset";
+
 @import 'foundation';
 
 body {
@@ -45,7 +46,6 @@ h1 {
   color: yellow
 }
 
-
 .planet-pics {
   width: 350px;
   height: 350px;
@@ -53,6 +53,11 @@ h1 {
   display: block;
   margin: auto;
 
+  padding: 30px;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
 }
 
 .planet-description {
