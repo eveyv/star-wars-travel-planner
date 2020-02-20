@@ -6,9 +6,7 @@ const TripForm = props => {
   const [ errors, setErrors ] = useState({})
   const [ newTrip, setNewTrip ] = useState({
     name: "",
-    description: "",
-    // planetOne: "",
-    // planetTwo: "",
+    description: ""
 })
 
 
