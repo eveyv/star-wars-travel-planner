@@ -40,10 +40,6 @@ const PlanetsIndexContainer = props => {
     <div>
       <h2>Explore a galaxy far, far away...</h2>
         {planetTiles}
-<<<<<<< HEAD
-=======
-     </div>
->>>>>>> 0f1cfe7cb7366dd555ccfb508cff9a69f88c8179
     </div>
   )
 }
