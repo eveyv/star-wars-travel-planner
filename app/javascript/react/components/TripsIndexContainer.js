@@ -36,6 +36,7 @@ const TripsIndexContainer = props => {
   })
 
   return(
+
     <div>
       <h2>The Last Jedi is an abomination</h2>
         {tripTiles}
