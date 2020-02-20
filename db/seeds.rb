@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-t1 = Trip.create(name: "Vacation")
+t1 = Trip.create(name: "Vacation", description: "For testing purposes please sweet jesus work")
 
 p1 = Planet.create(
           name: 'Hoth',
