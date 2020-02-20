@@ -36,7 +36,7 @@ const TripsIndexContainer = props => {
   })
 
   return(
-    <div className="stars">
+    <div>
       <h2>The Last Jedi is an abomination</h2>
         {tripTiles}
     </div>

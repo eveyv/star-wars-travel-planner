@@ -29,9 +29,9 @@ const PlanetsIndexContainer = props => {
   const planetTiles = planets.map(planet => {
 
     return(
-     <PlanetTiles
-      key={planet.id}
-      planet={planet}
+      <PlanetTiles
+        key={planet.id}
+        planet={planet}
       />
     )
   })
@@ -40,7 +40,7 @@ const PlanetsIndexContainer = props => {
     <div className="stars">
       <div className="grid-x grid-margin-x">
         {planetTiles}
-      </div>
+     </div>
     </div>
 
   )
