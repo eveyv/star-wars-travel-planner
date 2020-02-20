@@ -1,6 +1,6 @@
 require 'pry'
 class Api::V1::TripsController < ApplicationController
-  before_action :authorize_user, only: [:create, :destroy, :update]
+  before_action :authenticate_user!, only: [:create, :destroy, :update]
 
   def index
     render json: Trip.all
@@ -19,7 +19,6 @@ class Api::V1::TripsController < ApplicationController
       render json: { error: trip.errors.full_messages }, status: :unprocessable_entity
     end
   end
-
 
   private
 
