@@ -38,17 +38,13 @@ h1 {
   color: yellow
 }
 
+
 .planet-pics {
   width: 350px;
   height: 350px;
   border-radius: 90%;
   display: block;
   margin: auto;
-  padding: 30px;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
 }
 
 .planet-description {
@@ -81,6 +77,87 @@ h1 {
       padding: inherit;
     };
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
+  background-repeat: repeat;
+}
+
+.show-name {
+  color: yellow;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.destination-pic {
+  width: 80%;
+  height: 45%;
+  padding: 5px;
+  border: 2px dashed yellow;
+  display: block;
+  margin: auto
+}
+
+.trip-form {
+  display: inline-block;
+  padding:25px;
+  border: 2px dashed yellow;
+}
+
+.title {
+  font-family: 'Syncopate', sans-serif;
+  color: yellow;
+  font-style: oblique;
+  margin: auto;
+  padding-bottom: 55px;
+  width: 40%;
+  font-weight: bolder;
+  font-size: 55px
+}
+
+.form-text {
+  color:white;
+  font-family: 'Syncopate', sans-serif, bold;
+  font-size: 24px
+}
+
+.top-bar {
+    a {
+      color: yellow;
+      ridge: 5px
+    };
+    li {
+      background: #000 url('https://image.ibb.co/mjnygo/stars.png');
+      border: 1px dashed yellow;
+      padding: 10px;
+    };
+  background: #000 url('https://image.ibb.co/mjnygo/stars.png');
+  background-repeat: repeat;
+}
+
+.btn {
+  font-family: 'Syncopate', sans-serif;
+  background: yellow;
+  color:black;
+}
+
+.title {
+  font-family: 'Syncopate', sans-serif;
+  color: yellow;
+  font-style: oblique;
+  margin: auto;
+  padding-bottom: 55px;
+  width: 40%;
+  font-weight: bolder;
+  font-size: 55px
+}
+
+.top-bar {
+    a {
+    color: yellow;
+  };
+  li {
+    background: #000 url('https://image.ibb.co/mjnygo/stars.png');
+    border: 1px dashed yellow;
+    padding: inherit;
+  };
+background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
 }
 
