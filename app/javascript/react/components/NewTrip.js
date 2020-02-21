@@ -39,7 +39,6 @@ const NewTrip = props => {
   }
 
 return(
-
   <div>
     <h2 className="trip-create">Create your trip:</h2>
     <br/>
@@ -47,14 +46,6 @@ return(
     <TripForm
     onSubmit={setNewTrip} />
   </div>
-
-
-
-
-
-)
-
-
+  )
 }
-
 export default NewTrip
