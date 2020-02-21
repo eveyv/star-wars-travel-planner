@@ -69,7 +69,6 @@ if(shouldRedirect) {
         trip={trip}
         name={trip.name}
         descripton={trip.description}
-
       />
     )
   })
