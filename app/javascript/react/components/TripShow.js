@@ -1,17 +1,17 @@
 import React from 'react'
 import TripsIndexContainer from './TripsIndexContainer'
+import TripShowContainer from './TripShowContainer'
+import TripTiles from './TripTiles'
 
-const TripShow = props => {
-
+const TripShow = ({ trip }) => {
+  // debugger
+  let { id, name, planets } = trip
   return(
     <div>
-      <h1> trip name </h1>
+      <h2> {name} </h2>
       hello!
     </div>
-
-
   )
-
 
 }
 export default TripShow
