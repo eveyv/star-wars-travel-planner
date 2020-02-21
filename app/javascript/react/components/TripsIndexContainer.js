@@ -6,7 +6,6 @@ import NewTrip from './NewTrip'
 
 
 const TripsIndexContainer = props => {
-
   const [trips, setTrips] = useState([])
   let [error, setError ] = useState([])
   useEffect(() => {
@@ -29,6 +28,38 @@ const TripsIndexContainer = props => {
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }, [])
 
+  const setNewTrip = (formPayload) => {
+    fetch('/api/v1/trips.json', {
+        method: "POST",
+        body: JSON.stringify(formPayload),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          return response
+        } else {
+          let errorMessage = `${response.status} (${response.statusText})`
+          error = new Error(errorMessage)
+          throw error
+        }
+      })
+      .then(response => response.json())
+      .then(body => {
+        setTrips([
+          ...trips,
+          body])
+        setShouldRedirect(true)
+      })
+      .catch(error => console.error(`Error in fetch: ${error.message}`))
+}
+
+if(shouldRedirect) {
+  return <Redirect to ={`/trips/${tripID}`} />
+}
+
   const tripTiles = trips.map(trip => {
     return(
       <TripTiles
@@ -44,14 +75,15 @@ const TripsIndexContainer = props => {
   return(
     <div>
       <h1 className="title">| Trips |</h1>
-      <Link to={`/trips/new`} className="link-to"> NEW </Link>
-    <div>
-      <h2>The Last Jedi is an abomination</h2>
+        <Link to={`/trips/new`} className="link-to"> NEW </Link>
+      <div>
         {tripTiles}
-      <h2 className="easter-egg">The Last Jedi is an abomination</h2>
+        <h2 className="easter-egg">The Last Jedi is an abomination</h2>
+      <div>
+      <TripForm
+      onSubmit={setNewTrip}
+      />
     </div>
-
-
   )
 }
 

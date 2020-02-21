@@ -7,8 +7,6 @@ const TripForm = props => {
   const [ newTrip, setNewTrip ] = useState({
     name: "",
     description: "",
-    // planetOne: "",
-    // planetTwo: "",
 })
 
 
@@ -42,12 +40,9 @@ const handleSubmit = (event) => {
       setNewTrip({
         name: "",
         description: "",
-        // planetOne: "",
-        // planetTwo: "",
       })
     }
   }
-
   return(
     <form className="trip-form" onSubmit={handleSubmit}>
       <ErrorList errors={errors} />
@@ -78,44 +73,6 @@ const handleSubmit = (event) => {
       className="btn"
       />
     </form>
-
-      //   <label className="form-text">
-      //     Select your first planet:
-      //     <select
-      //       id="planetOne"
-      //       name="planetOne"
-      //       value={newTrip.planetOne}
-      //       onChange={handleInputChange}
-      //       >
-      //       <option disabled selected value> -- select an option -- </option>
-      //       <option value="Hoth">Hoth</option>
-      //       <option value="Coruscant">Coruscant</option>
-      //       <option value="Death Star">Death Star</option>
-      //       <option value="Tatooine">Tatooine</option>
-      //       <option value="Kashyyk">Kashyyk</option>
-      //       <option value="Mustafar">Mustafar</option>
-      //     </select>
-      //   </label>
-      //
-      // <label className="form-text">
-      //   Select your second planet:
-      //     <select
-      //       id="planetTwo"
-      //       name="planetTwo"
-      //       value={newTrip.planetTwo}
-      //       onChange={handleInputChange}
-      //       >
-      //
-      //       <option disabled selected value> -- select an option -- </option>
-      //       <option value="Hoth">Hoth</option>
-      //       <option value="Coruscant">Coruscant</option>
-      //       <option value="Death Star">Death Star</option>
-      //       <option value="Tatooine">Tatooine</option>
-      //       <option value="Kashyyk">Kashyyk</option>
-      //       <option value="Mustafar">Mustafar</option>
-      //   </select>
-      // </label>
-
   )
 }
 
