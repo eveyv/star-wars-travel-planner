@@ -1,12 +1,6 @@
 class TripSerializer < ActiveModel::Serializer
-  attributes :id, :name, :planet_name
+  attributes :id, :name, :planets
 
-  def planet_name
-    emptyArray = []
-    object.planets.each do |planet|
-      emptyArray << planet.name
-    end
-    return emptyArray
-  end
+  has_many :planets
 
 end
