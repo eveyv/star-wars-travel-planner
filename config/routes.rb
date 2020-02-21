@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   get "/trips", to: 'homes#index'
-  get "trips/new", to: 'homes#index'
+  get "/trips/new", to: 'homes#index'
   get "/planets", to: 'homes#index'
   get "trips/new", to: 'homes#index'
   get "/planets/:id", to: 'homes#index'
