@@ -4,7 +4,7 @@
 
 Created By: Max Lee and Everett Yeaw
 
-* Ruby version
+* Ruby version: 2.6.5
 
 * System dependencies
 
