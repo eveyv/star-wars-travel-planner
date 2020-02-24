@@ -7,6 +7,7 @@ body {
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
   text-align: center;
+  color: yellow;
 }
 
 img {
@@ -57,11 +58,10 @@ h1 {
 
 .planet-description {
   color: yellow;
+  // width: 60%;
+  margin: 15px;
   text-align: center;
-  width:60%;
-  border-radius: 5px;
-  text-align: center;
-  display: inline-block;
+  // display: inline-block;
 }
 
 .title {
@@ -102,7 +102,7 @@ h1 {
 }
 
 .trip-form {
-  display: inline-block;
+  // display: inline-block;
   padding:75px;
   border: 2px dashed yellow;
 }
@@ -123,17 +123,17 @@ h1 {
   font-size: 24px
 }
 
-.link-to {
-  font-family: 'Syncopate', sans-serif;
-  background: yellow;
-  color:black;
-  width: 10%;
-  height:auto;
-  padding:25px;
-  border-radius:10px;
-  font-weight:650;
-  align-self: center;
-}
+// .link-to {
+//   font-family: 'Syncopate', sans-serif;
+//   background: yellow;
+//   color:black;
+//   width: 10%;
+//   height:auto;
+//   padding:25px;
+//   border-radius:10px;
+//   font-weight:650;
+//   align-self: center;
+// }
 
 .trip-create {
     font-family: 'Syncopate', sans-serif, bolder;
