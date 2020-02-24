@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TripTiles = ({ trip }) => {
   let { id, name, planet_name } = trip
 
   return(
     <div key={id} className="planet-description">
-      {name} - {planet_name}
+      <Link to={`/trips/${trip.id}`} className="link-to"> {trip.name} </Link>
     </div>
   )
 }

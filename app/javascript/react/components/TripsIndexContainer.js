@@ -75,11 +75,11 @@ if(shouldRedirect) {
 
   return(
     <div>
-      <h2>The Last Jedi is an abomination</h2>
+      <h1> List of Current Trips </h1>
         {tripTiles}
 
         <TripForm
-        onSubmit={setNewTrip}
+          onSubmit={setNewTrip}
         />
     </div>
 

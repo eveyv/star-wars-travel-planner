@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   get "/trips", to: 'homes#index'
   get "/trips/new", to: 'homes#index'
   get "/planets", to: 'homes#index'
-  get "/trips/:id", to: 'homes#index'
+  get "trips/new", to: 'homes#index'
   get "/planets/:id", to: 'homes#index'
+  get "/trips/:id", to: 'homes#index'
 
   namespace :api do
     namespace :v1 do
