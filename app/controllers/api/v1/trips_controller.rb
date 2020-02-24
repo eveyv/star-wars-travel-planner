@@ -1,6 +1,5 @@
-require 'pry'
 class Api::V1::TripsController < ApplicationController
-  before_action :authenticate_user!, only: [:create, :destroy, :update]
+  before_action :authorize_user, only: [:create, :destroy, :update]
 
   def index
     render json: Trip.all
@@ -20,10 +19,11 @@ class Api::V1::TripsController < ApplicationController
     end
   end
 
+
   private
 
   def trip_params
-    params.permit(:name, :description)
+    params.permit(:id, :name, :description)
   end
 
   def authorize_user
