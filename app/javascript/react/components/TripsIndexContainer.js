@@ -75,15 +75,27 @@ if(shouldRedirect) {
 
   return(
     <div>
+<<<<<<< HEAD
       <h1> List of Current Trips </h1>
         {tripTiles}
 
         <TripForm
           onSubmit={setNewTrip}
         />
+=======
+      <h1>| Trips |</h1>
+      <div className="grid-x grid-margin-x">
+        {tripTiles}
+      </div>
+      <div>
+        <Link to={`/trips/new`} className="link-to"> NEW </Link>
+        <br/>
+        <br/>
+        <br/>
+        <h2 className="easter-egg">The Last Jedi is an abomination</h2>
+      </div>
+>>>>>>> 7f30b8c16643807930c6913a11ea42bb6c9ee6fe
     </div>
-
-
   )
 }
 

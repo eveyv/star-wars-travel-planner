@@ -1,13 +1,14 @@
-// @import "susy";
-// @import "compass/reset";
-
 @import 'foundation';
 
 body {
   background: #000 url('https://image.ibb.co/mjnygo/stars.png');
   background-repeat: repeat;
   text-align: center;
+<<<<<<< HEAD
   color: yellow;
+=======
+  color: white;
+>>>>>>> 7f30b8c16643807930c6913a11ea42bb6c9ee6fe
 }
 
 img {
@@ -16,6 +17,10 @@ img {
   border-radius: 1%;
   display: block;
   margin: auto
+}
+
+.easter-egg {
+  color:black;
 }
 
 
@@ -141,19 +146,6 @@ h1 {
     font-weight:400;
 }
 
-.top-bar {
-    a {
-      color: yellow;
-      ridge: 5px
-    };
-    li {
-      background: #000 url('https://image.ibb.co/mjnygo/stars.png');
-      border: 1px dashed yellow;
-      padding: 10px;
-    };
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png');
-  background-repeat: repeat;
-}
 
 .btn {
   font-family: 'Syncopate', sans-serif;
