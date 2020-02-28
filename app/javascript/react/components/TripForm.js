@@ -47,64 +47,64 @@ const TripForm = props => {
   return(
     <form className="trip-form" onSubmit={handleSubmit}>
       <ErrorList errors={errors} />
-      <label className="form-text">
-        Trip Name:
-        <input
-          id="name"
-          type="text"
-          name="name"
-          value={newTrip.name}
-          onChange={handleInputChange}
-        />
-      </label>
+          <label className="form-text">
+            Trip Name:
+            <input
+            id="name"
+            type="text"
+            name="name"
+            value={newTrip.name}
+            onChange={handleInputChange}
+            />
+          </label>
+          <label className="form-text">
+            Trip Description:
+            <input
+              id="description"
+              type="text"
+              name="description"
+              value={newTrip.description}
+              onChange={handleInputChange}
+              />
+          </label>
+          <label className="form-text">
+            Select your first planet:
+              <select
+                id="planetOne"
+                name="planetOne"
+                value={newTrip.planetOne}
+                onChange={handleInputChange}>
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="Hoth">Hoth</option>
+                  <option value="Coruscant">Coruscant</option>
+                  <option value="Death Star">Death Star</option>
+                  <option value="Tatooine">Tatooine</option>
+                  <option value="Kashyyk">Kashyyk</option>
+                  <option value="Mustafar">Mustafar</option>
+              </select>
+            </label>
 
-      <label className="form-text">
-        Trip Description:
+          <label className="form-text">
+            Select your second planet:
+              <select
+                id="planetTwo"
+                name="planetTwo"
+                value={newTrip.planetTwo}
+                onChange={handleInputChange}>
+                  <option disabled selected value> -- select an option -- </option>
+                  <option value="Hoth">Hoth</option>
+                  <option value="Coruscant">Coruscant</option>
+                  <option value="Death Star">Death Star</option>
+                  <option value="Tatooine">Tatooine</option>
+                  <option value="Kashyyk">Kashyyk</option>
+                  <option value="Mustafar">Mustafar</option>
+            </select>
+          </label>
         <input
-          id="description"
-          type="text"
-          name="description"
-          value={newTrip.description}
-          onChange={handleInputChange}
+          type="submit"
+          className="btn"
         />
-      </label>
-      
-      <label className="form-text">
-        Select your first planet:
-          <select
-            id="planetOne"
-            name="planetOne"
-            value={newTrip.planetOne}
-            onChange={handleInputChange}>
-              <option disabled selected value> -- select an option -- </option>
-              <option value="Hoth">Hoth</option>
-              <option value="Coruscant">Coruscant</option>
-              <option value="Death Star">Death Star</option>
-              <option value="Tatooine">Tatooine</option>
-              <option value="Kashyyk">Kashyyk</option>
-              <option value="Mustafar">Mustafar</option>
-          </select>
-        </label>
-
-      <label className="form-text">
-        Select your second planet:
-          <select
-            id="planetTwo"
-            name="planetTwo"
-            value={newTrip.planetTwo}
-            onChange={handleInputChange}>
-              <option disabled selected value> -- select an option -- </option>
-              <option value="Hoth">Hoth</option>
-              <option value="Coruscant">Coruscant</option>
-              <option value="Death Star">Death Star</option>
-              <option value="Tatooine">Tatooine</option>
-              <option value="Kashyyk">Kashyyk</option>
-              <option value="Mustafar">Mustafar</option>
-      <input
-        type="submit"
-        className="btn"
-      />
-    </form>
+      </form>
 
   )
 }
